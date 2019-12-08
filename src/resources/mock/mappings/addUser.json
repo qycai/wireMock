@@ -1,0 +1,33 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/api/addUser",
+    "headers": {
+      "Content-Type" :{"equalTo" : "application/json; charset=UTF-8"}
+    },
+    "cookies": {
+      "session": {
+        "matches": ".*12345.*"
+      }
+    },
+    "basicAuth": {
+      "username": "qycai",
+      "password": "qycai123"
+    },
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.name",
+        "matchesJsonPath": "$..firstName",
+        "matchesJsonPath": "$..lastName",
+        "matchesJsonPath": "$.age"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "add user successfully"
+  }
+}
