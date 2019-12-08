@@ -1,11 +1,11 @@
 {
   "request": {
     "method": "GET",
-    "urlPath": "/api/getUserDetails"
+    "url": "/api/getAllBooks"
   },
   "response": {
     "status": 200,
-    "bodyFileName": "firstCourse/userDetails.json",
+    "bodyFileName": "firstCourse/bookDetails.json",
     "headers": {
       "Content-Type": "application/json; charset=UTF-8"
     }
