@@ -1,0 +1,53 @@
+{
+  "name": "TOM",
+  "age": 30,
+  "birthPlace": {
+    "country": "China",
+    "city": "beijing",
+    "state": "chaoyang state",
+    "street": "wangfujing street"
+  },
+  "contacts": [
+    {
+      "phone": "12345678901",
+      "address": "chengdu-tianfu-state"
+    },
+    {
+      "phone": "11223344556",
+      "address": "chengdu-jinjiang-state"
+    }
+  ],
+  "working": {
+    "workingProject": [
+      {
+        "projectName": "project A",
+        "jobTitle": "DEV",
+        "responsibility": "develop"
+      },
+      {
+        "projectName": "project B",
+        "jobTitle": "QA",
+        "responsibility": "quality analyse"
+      },
+      {
+        "projectName": "project C",
+        "jobTitle": "TL",
+        "responsibility": "technology lead and team lead"
+      }
+    ]
+  },
+  "skills": {
+    "language": "CET6",
+    "tech": [
+      {
+        "programming language": "Java",
+        "level": "good"
+      },
+      {
+        "programming language": "C++",
+        "level": "poor"
+      }
+    ]
+  },
+  "comment": "other info"
+}
