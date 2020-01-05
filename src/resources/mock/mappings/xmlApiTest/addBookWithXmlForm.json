@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/api/addBookWithXmlForm/([a-z]*)",
+    "headers": {
+      "Content-Type": {
+        "equalTo": "application/xml;charset=utf-8"
+      }
+    },
+    "bodyPatterns": [
+      {
+        "matchesXPath": {
+          "expression": "/bookstore/book/author/text()",
+          "contains": ""
+        },
+        "matchesXpath":{
+          "expression":"/bookstore/book/price/text()",
+          "contains": ""
+        },
+        "matchesXPath": {
+          "expression": "/bookstore/book/bookName/text()",
+          "contains": ""
+        }
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "body": "add book with xml form successfully"
+  }
+}
